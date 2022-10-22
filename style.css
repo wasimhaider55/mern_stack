@@ -1,3 +1,32 @@
-p {
+p#abc {
+    color: green;
+}
+
+p.xyz {
+    background-color: lightsteelblue;
     color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: line-through;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+p.test {
+    color: yellow;
+}
+
+button#btn {
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
+
+button#btn:hover {
+    background-color: aqua;
+}
+
+p {
+    color: blueviolet;
 }
