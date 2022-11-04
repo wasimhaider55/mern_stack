@@ -1,0 +1,208 @@
+/*
+primary color :
+secondary color:  rgb(37, 93, 170);
+text color : 
+heading size : 
+font size : 
+*/
+
+div#container {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+header span#title {
+    font-weight: bold;
+    font-size: 1.5em;
+    float: left;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+header span#slogan {
+    clear: both;
+    float: left;
+    padding-left: 85px;
+    top: -10px;
+    position: relative;
+}
+
+header div#search {
+    float: right;
+    top: -20px;
+    margin-right: 10px;
+    position: relative;
+
+}
+
+header div#search input#nameField {
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+header div#search input#nameField:focus {
+    border: 2px solid red;
+}
+
+#btn-search {
+    border-radius: 10px;
+    color: black;
+
+}
+
+#btn-search:hover {
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: rgb(37, 93, 170);
+    display: inline-block;
+    padding-left: 60px;
+    height: 25px;
+    width: 60px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aside {
+    float: left;
+    width: 25%;
+    height: 250px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    display: block;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(37, 93, 170);
+}
+
+aside ul li a:hover {
+    background-color: black
+}
+
+div#product {
+    margin-top: 10px;
+    width: 70%;
+    height: 255px;
+    float: left;
+    background-color: lightgray;
+}
+
+div.card {
+    width: 180px;
+    height: 250px;
+    text-align: center;
+    float: left;
+    margin: 15px;
+    background-color: white;
+}
+
+div.card:hover {
+    box-shadow: 0 0 10px rgb(91, 152, 236);
+    cursor: pointer;
+}
+
+div.card img {
+    width: 100px;
+    height: 100px;
+}
+
+div.card h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+div.card p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+    padding: 10px;
+}
+
+div.card p.price {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(37, 93, 170);
+}
+
+div.card button {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(37, 93, 170);
+    color: white;
+    border: none;
+}
+
+div.card button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+footer {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    clear: both;
+    float: left;
+
+}
+
+footer p {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(250, 246, 246);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
