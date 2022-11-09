@@ -156,6 +156,9 @@
 // console.log(students[2].friends[3]);
 
 
+
+// product. json file creted from here 
+
 const data = {
     "products": [
       {
