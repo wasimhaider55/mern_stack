@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const data = [
+    {
+        "sno": 9,
+        "name": "wasim",
+        "college": "paradise",
+        "gpa": 3.5,
+        "city": "hangu",
+        "country": "pakistan",
+        "Sprotman":true,
+        "score" : 99,
+        "address": {
+            "city" : "hangu",
+            "state": "kpk",
+            "country": "pakistan"
+        }
+
+    }
+]
+
+const str =  JSON.stringify(data);
+// console.log(str);
+const obj = JSON.parse(str);
+console.log(obj);
+
+
+</script>
+</body>
+</html>

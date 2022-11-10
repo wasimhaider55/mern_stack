@@ -1,0 +1,18 @@
+[
+    {
+        "sno": 9,
+        "name": "wasim",
+        "college": "paradise",
+        "gpa": 3.5,
+        "city": "hangu",
+        "country": "pakistan",
+        "Sprotman":true,
+        "score" : 99,
+        "address": {
+            "city" : "hangu",
+            "state": "kpk",
+            "country": "pakistan"
+        }
+
+    }
+]

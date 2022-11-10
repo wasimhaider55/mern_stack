@@ -1,0 +1,12 @@
+<xml>
+<student1>
+    <name>wasim haider</name>
+    <age>23</age>
+        <address>
+            <city> hangu</city>
+            <state>kpk</state>
+            <village>kahi</village>
+        </address>
+
+</student1>
+ </xml>

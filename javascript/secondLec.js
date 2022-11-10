@@ -163,7 +163,7 @@ const data = {
     "products": [
       {
         "name": "laptop",
-        "price": 1000,
+        "price": 1000, 
         "isavaiable": true
       },
       {
