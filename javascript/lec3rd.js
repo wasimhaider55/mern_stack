@@ -39,8 +39,16 @@ const data = {
 
   // const products = data.products;
   // for (let i = 0; i < products.length; i++ ){
+  //   // console.log(products[i].price);
   //   let sum = 0;
-  //   sum = sum +  products[i].price;
+  //   sum = sum + products[i].price;
   //   console.log(sum);
   // }
-
+  
+  // TO DO sum all prices in this program 
+const number = [4,5,6,1,2,3];
+for ( let i = 0; i < number.length; i++ ){
+  var sum = 0;
+  sum = sum + number[i] 
+}
+console.log(sum);
