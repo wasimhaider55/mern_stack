@@ -37,10 +37,10 @@ const data = {
 
 
 
-  const products = data.products;
-  for (let i = 0; i < products.length; i++ ){
-    let sum = 0;
-    sum = sum +  products[i].price;
-    console.log(sum);
-  }
+  // const products = data.products;
+  // for (let i = 0; i < products.length; i++ ){
+  //   let sum = 0;
+  //   sum = sum +  products[i].price;
+  //   console.log(sum);
+  // }
 
