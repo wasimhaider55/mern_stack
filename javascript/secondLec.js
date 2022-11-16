@@ -61,9 +61,9 @@
 
 // // loops
 // // for , while , do while 
-// for loops is used for specified number of time 
-// while loops execute undefined number of time 
-// dowhile loops execute    1 or more and specifed and unspecified number of time executed
+// for loops is used for specified number of time  (pre conditions ) 
+// while loops execute undefined number of time    (pre conditions ) 
+// dowhile loops execute    1 or more and specifed and unspecified number of time executed (post conditions ) 
 
 
 // for(let i=0;i<10;i++){
