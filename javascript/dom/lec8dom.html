@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <button onclick="changeDom()">click</button>
+
+    <ul id="items">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <h1 id="head1">this is heading 1 </h1>
+    <img src="./bird1.jpg" id="bird" width="200" height="200">
+
+    <form  id="f1">
+        <label for="">username :</label><input type="text" id="username" name="username">
+        <label for="">Password :</label><input type="password" id="password" name="password">
+    </form>
+    <p class="para1" style="color: red;" onclick="parafun(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id optio ullam autem doloribus voluptas debitis esse
+        quis, itaque nesciunt voluptate sed corrupti corporis expedita saepe officiis cupiditate repudiandae? Similique,
+        omnis.</p>
+     <p class="para2" style="color: red;" onclick="parafun(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id optio ullam autem doloribus voluptas debitis esse
+        quis, itaque nesciunt voluptate sed corrupti corporis expedita saepe officiis cupiditate repudiandae? Similique,
+           omnis.</p>
+   
+    
+
+           <h2 id="head2">heading 2</h2>
+
+    <script>
+        const h2 = document.getElementById("head2");
+        h2.setAttribute("class", "heading ")
+
+        const changeDom = () => {
+            // changing inner text of tags 
+            document.getElementById("head1").innerHTML = "<u>Pakistan</u>";
+
+            // changing attributes of tags 
+            document.getElementById("bird").width = "400";
+
+            const username = document.forms["f1"]["username"].value;
+            const password = document.forms["f1"]["password"].value;
+            console.log(username , password);
+
+            document.querySelector(".para1").style.color = "white";
+            document.querySelector(".para1").style.backgroundColor = "red"; // use camecase it will not accept snake-case
+
+
+          const p =   document.createElement("p");
+          p.id = "abc";
+          p.innerHTML = "this is new para added";
+          document.body.appendChild(p);
+
+
+          const li = document.createElement("li");
+          li.textContent = "New Item";
+          document.getElementById("items").appendChild(li);
+    
+        }
+
+        // const parafun = (para) => {
+        //  if(para.id === "para1") {
+        //     alert("para1");
+        //  }
+        //  else{
+        //     alert("para2");
+        //  }
+        // }
+
+
+
+
+
+
+
+
+
+    //   const h1 =  document.getElementById("head1");
+    //   const p =  document.getElementsByClassName("para1"); // class always return array
+    //   const h3 = document.getElementsByTagName("h3");  // tag also  return array
+    //   const haed = document.querySelector("#haed1");
+    //   const para = document.querySelectorAll("p");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Events  -->
+    <!-- onclick, onmouseenter , onkeypress  -->
+    <button id="btn" onmouseenter="listen()">click me </button>
+    <p onmouseenter="remove()">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda unde alias impedit beatae iste
+        rem, veniam, accusantium tenetur porro amet provident corrupti modi ipsum molestiae exercitationem nobis
+        ratione! Dicta!</p>
+        <form action="">
+            <input type="text", id="input" onkeypress="inputListener()">
+        </form>
+        
+    <script>  
+    const listen = () => {
+        alert("button click")
+    }
+
+    const inputListener = ()=>{
+            console.log("button click")
+         }
+
+         const remove = () => {
+            document.write();
+         }
+    </script>
+</body>
+
+</html>
