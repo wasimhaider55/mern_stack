@@ -21,3 +21,13 @@ p2.quantity = 6;
 const bill = p2.bill();
 console.log(bill);
 
+
+
+// defult exports always be one in calss
+// name exports more than one in a class 
+
+//     name exports          vs               default exports 
+//  exports {pro1 , pro2 }               import pro3 from "./products"
+
+
+// we can change the name of Name exports but we can not change name of default exports 
