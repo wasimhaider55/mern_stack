@@ -96,6 +96,9 @@
 
 
 
+
+
+
 // Objects 
 // object is actual variable where we can store multiple type of data in a single variable
 
@@ -112,8 +115,12 @@
 //     }
 
 // } 
+// console.log(data);
 // console.log(data.friends[2]);
 
+
+
+// Array of objects
 
 // const students = [
 //     { 
@@ -153,7 +160,7 @@
 //         }
 //     }
 // ]
-// console.log(students[2].friends[3]);
+// console.log(students[2].friends[1]);
 
 
 
