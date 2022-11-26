@@ -19,12 +19,12 @@ const data = {
       },
       {
         "name": "washing machine",
-        "price": 6600,
+        "price": 6000,
         "isavaiable": true
       },
       {
         "name": "fridge",
-        "price": 1400,
+        "price": 1000,
         "isavaiable": true
       }
     ]
@@ -36,22 +36,23 @@ const data = {
 //   }
 
 
-  // To DO print all price of upper oject 
+  // // array of objects print all price of upper oject 
+  // let sum = 0 ;
   // const products = data.products;
   // for (let i = 0; i < products.length; i++ ){
   //   // console.log(products[i].price);
-  //   let sum = 0 ;
   //   sum = sum + products[i].price;
-  //   console.log(sum);
   // }
+  // console.log(sum);
 
   
 
-  
-//   // TO DO sum all prices  of array  in this program 
-// const number = [4,5,6,1,2,3];
-// for ( let i = 0; i < number.length; i++ ){
+
+//   // find the sum of array 
 //   var sum = 0;
-//   sum = sum + number[i] 
+// const number = [4,5,6,1,2,5];
+// for ( let i = 0; i < number.length; i++ ){
+//   sum = sum + number[i]
+  
 // }
-// console.log(sum);
+// console.log(sum); 
