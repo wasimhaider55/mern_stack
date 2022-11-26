@@ -7,7 +7,7 @@
 // what is different switch condition and else if conditions 
 // ans : where we can use swtich definatly there we can use else if 
 //  switch is used for efficence mean  where we can use constant value  
-// 
+// switch is used for range  
 
 
 // // Conditions
@@ -41,7 +41,7 @@
 //         console.log("yes it is 10");
 //         break;
 //         case 20 : 
-//         console.log("now it;s not 10")
+//         console.log("No it is not 10")
 //         default:
 //         console.log("this is default statment ");
 // }
