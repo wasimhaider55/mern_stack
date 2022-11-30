@@ -10,7 +10,7 @@ const data = {
       {
         "name": "tv",
         "price": 1700,
-        "isavaiable": true
+        "avaiable": false
       },
       {
         "name": "mobile",
@@ -25,27 +25,46 @@ const data = {
       {
         "name": "fridge",
         "price": 1000,
-        "isavaiable": true
+        "avaiable": false
       }
     ]
   }
 
+  // print product name 
 //   const products = data.products;
 //   for (let i = 0; i < products.length; i++ ){
 //     console.log(products[i].name);
 //   }
 
 
+
   // // array of objects print all price of upper oject 
   // let sum = 0 ;
   // const products = data.products;
   // for (let i = 0; i < products.length; i++ ){
-  //   // console.log(products[i].price);
-  //   sum = sum + products[i].price;
-  // }
-  // console.log(sum);
-
-  
+    //   // console.log(products[i].price);
+    //   sum = sum + products[i].price;
+    // }
+    // console.log(sum);
+    
+    
+    
+    
+    
+    // // write program if product isavailable  give discount 20 percent 
+    
+    // const products = data.products;
+    // let sum = 0;
+    // let discount = 0;
+    // for(let j = 0; j<products.length; j++ ){
+    //   if (products[j].isavaiable == true){
+    //     sum = sum + products[j].price;
+    //     discount = sum * 0.2;
+    //   }
+    // }
+    // console.log(`the total sum of products is ${sum} `);
+    // console.log(`the total discount is ${discount} `);
+    // console.log(`Now You pay just  ${sum - discount} `);
 
 
 //   // find the sum of array 
