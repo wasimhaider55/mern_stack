@@ -102,22 +102,24 @@
 // Objects 
 // object is actual variable where we can store multiple type of data in a single variable
 
-const data = {
-    marks : 30,
-    name : "wasimHaider",
-    gpa : 3.7,
-    ispass : true,
-    friends : ["salman" , " saqib ", "abdu-razaq", "qaisar"],
-    address : {
-        city : "hangu" ,
-        countery : "pakistan",
-        thesil :  "hangu",
-    }
-}
+// const data = {
+//     marks : 45,
+//     name : "wasimHaider",
+//     gpa : 3.7,
+//     ispass : true,
+//     friends : ["salman" , " saqib ", "abdu-razaq", "qaisar"],
+//     address : {
+//         city : "hangu" ,
+//         countery : "pakistan",
+//         thesil :  "hangu",
+//     }
+// }
 
 
 // console.log(data);
 // console.log(data.friends[2]);
+
+
 
 // // write the program if this student is pass print his friends data otherwise print 
 // if (data.marks > 33) {
@@ -129,50 +131,58 @@ const data = {
 
 
 
-
 // Array of objects
 
-// const students = [
-//     { 
-//         marks : 45,
-//         name : "wasimHaider",
-//         gpa : 3.7,
-//         ispass : true,
-//         friends : ["salman" , " saqib ", "abdu-razaq", "qaisar"],
-//         address : {
-//             city : "hangu" ,
-//             countery : "pakistan",
-//             thesil :  "hangu",
-//         }
-//     },
-//     {
-//         marks : 85,
-//         name : "saqib shadman wazeri",
-//         gpa : 3.2,
-//         ispass : true,
-//         friends : ["zahid" , " saqib ", "saddaf", "salma"],
-//         address : {
-//             city : "mardan" ,
-//             countery : "pakistan",
-//             thesil :  "bahshali",
-//         }
-//     },
-//     {
-//         marks : 22,
-//         name : "zia khan",
-//         gpa : 1.7,
-//         ispass :false,
-//         friends : ["masroor" , " bilal  ", "maqsood", "asad"],
-//         address : {
-//             city : "bannu" ,
-//             countery : "pakistan",
-//             thesil :  "bannu",
-//         }
-//     }
-// ]
+const students = [
+    { 
+        marks : 45,
+        name : "wasimHaider",
+        gpa : 3.7,
+        ispass : true,
+        friends : ["salman" , " saqib ", "abdu-razaq", "qaisar"],
+        address : {
+            city : "hangu" ,
+            countery : "pakistan",
+            thesil :  "hangu",
+        }
+    },
+    {
+        marks : 85,
+        name : "saqib shadman wazeri",
+        gpa : 3.2,
+        ispass : true,
+        friends : ["zahid" , " saqib ", "saddaf", "salma"],
+        address : {
+            city : "mardan" ,
+            countery : "pakistan",
+            thesil :  "bahshali",
+        }
+    },
+    {
+        marks : 22,
+        name : "zia khan",
+        gpa : 1.7,
+        ispass :false,
+        friends : ["masroor" , " bilal  ", "maqsood", "asad"],
+        address : {
+            city : "bannu" ,
+            countery : "pakistan",
+            thesil :  "bannu",
+        }
+    }
+]
 // console.log(students[2].friends[1]);
 
+// // write a program  if student is pass then print his address 
+// for(let i = 0; i<students.length; i++){
+//     if(students[i].marks > 33){
+//          console.log(students[i].address.city)
+//     }
+// }
 
+
+
+// goto google and create (javascript object to json file ) create online json file form your paste file 
 
 // // product. json file creted from here 
 
