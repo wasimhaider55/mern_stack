@@ -102,21 +102,31 @@
 // Objects 
 // object is actual variable where we can store multiple type of data in a single variable
 
-// const data = {
-//     marks : 45,
-//     name : "wasimHaider",
-//     gpa : 3.7,
-//     ispass : true,
-//     friends : ["salman" , " saqib ", "abdu-razaq", "qaisar"],
-//     address : {
-//         city : "hangu" ,
-//         countery : "pakistan",
-//         thesil :  "hangu",
-//     }
+const data = {
+    marks : 30,
+    name : "wasimHaider",
+    gpa : 3.7,
+    ispass : true,
+    friends : ["salman" , " saqib ", "abdu-razaq", "qaisar"],
+    address : {
+        city : "hangu" ,
+        countery : "pakistan",
+        thesil :  "hangu",
+    }
+}
 
-// } 
+
 // console.log(data);
 // console.log(data.friends[2]);
+
+// // write the program if this student is pass print his friends data otherwise print 
+// if (data.marks > 33) {
+// console.log(data.friends);
+// }
+// else{ 
+//     console.log("the student is fail ");
+// }
+
 
 
 
