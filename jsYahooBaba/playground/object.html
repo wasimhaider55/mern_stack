@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object of js</title>
+</head>
+<body>
+    <script>
+
+// const student = {
+//     fnmae : "wasim",
+//     lname : "haider",
+//     age : 23,
+//     email : "wasimhaider33@gmail.com",
+//     favMovies : ["doom 3", "pk" ,"Awarapan"],
+//     address : {
+//         city : "Hangu",
+//         village : "kahi",
+//     },
+//     salray :  function (){
+//         return 2500;
+//     },
+//     fullName : function () {
+//         return this.fnmae  + " " + this.lname ;
+//     }
+// }
+
+
+// document.write(student.email);
+// console.log(student);
+// document.write(student.favMovies);
+// document.write("<br>");
+// document.write(student.favMovies[2]);
+// document.write("<br>");
+// document.write(student.salray());
+// document.write("<br>");
+// document.write(student.address.village);
+// document.write("<br>");
+// document.write(student.fullName());
+
+
+
+
+
+
+// creating object in new ways 
+// const students = new Object();
+// students.fname = "wasim";
+// students.lname = "Haider";
+// students.age = 23;
+
+// console.log(students);
+// console.log(students.age);
+
+
+
+
+
+
+
+// // arrays of object 
+
+// const students = [
+//     {
+//     fnmae : "wasim",
+//     lname : "haider",
+//     age : 23,
+//     email : "wasimhaider33@gmail.com",
+//     },
+//     {
+//     fnmae : "Qaisar",
+//     lname : "Iqbal",
+//     age : 23,
+//     email : "qaisariqbal43@gmail.com",},
+//     {
+//     fnmae : "Zia",
+//     lname : "Ullah",
+//     age : 20,
+//     email : "ziaullah93@gmail.com",
+//     }
+// ]
+
+// console.log(students);
+
+// // print fname through  for loops
+// for(let i = 0; i<students.length; i++){
+//     document.write(students[i].fnmae + " " + students[i].lname  + "<br>");
+// }
+
+
+
+
+
+// how to change const value in arrays and objects  (53 lec yahoo baba)
+// const data = [33,45,77];
+// // data = [334,55,22,];  // error in console becuse const cannont change 
+// // we can change like this const value 
+// data[0] = 100;
+// data[1] = 90;
+// data[2] = 70;
+// document.write(data);
+
+
+
+// const data = {
+//     fname : "wasim",
+//     age : 20,
+// }
+//  // we can change like that const value in object 
+// data.fname = "haider";
+// data.age = 23;
+// console.log(data);
+
+
+
+// we cannot change  const object  like that  
+// data = {
+//     fname : "Hikamt",
+//     age : 30,
+// }
+// console.log(data);
+
+
+
+
+
+// // For in loop  ( use for object manipolations )
+// const data = {
+//     fname : "wasim",
+//     lname : "Haider",
+//     sNo : 345,
+//     age : 20,
+// }
+
+// for(let key in data){
+//     document.write( ` ${key}    ${data[key]}  <br> `);
+// }
+
+
+
+
+
+// // Map method of arrays (map is used for operation ) 
+// // but it cannot change exesting array it create new array form exesting array  
+// const data = [2,3,5,3];
+// const b = data.map( test = (n) =>{
+//     return n * 5;
+// })
+// document.write(b);
+
+
+
+
+
+// map mehtod in object 
+
+const data =  [ 
+    {
+    fname : "wasim",
+    lname : "Haider",
+  },
+
+{
+    fname : "Asim",
+    lname : "Haider",
+},
+
+{
+    fname : "Naseem",
+    lname : "Haider"
+}
+];
+
+const res = data.map(test = (n) => {
+    return n.fname + " " + n.lname ;
+});
+document.write(res);
+
+</script>
+</body>
+</html>
