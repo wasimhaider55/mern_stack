@@ -1,0 +1,12 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+#test{
+    color: black;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(158, 157, 157);
+    margin: auto;
+}
