@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form events</title>
+</head>
+
+<body>
+
+    <form action="" onsubmit="submitFun(this)">
+        <label for="">Name</label> <input type="text" id="fname" onfocus="focusFun(this)" onblur="blurFun(this)" oninput="inputFun(this)" oninvalid="alert('please put the first name ')" required>
+        <br>
+        <br>
+        <label for="">Class</label> <input type="text" id="" onfocus="focusFun(this)" onblur="blurFun(this)" oninput="inputFun(this)">
+        <br>
+        <br>
+        <label for="">Country</label>
+        <select name="" id="" onfocus="focusFun(this)" onblur="blurFun(this)" oninput="inputFun(this)"  onchange="changefun(this)">
+            <option value="pakistan">pakistan</option>
+            <option value="india">india</option>
+            <option value="england">england</option>
+            <option value="dubai">dubai</option>
+            <option value="london">london</option>
+        </select>
+        <br>
+        <br>
+        <button>submit</button>
+    </form>
+
+    <div id="test" style="border: 3px solid red"></div>
+
+
+    <script>
+        function focusFun(element) {
+            element.style.backgroundColor = " gray";
+        }
+
+        function blurFun(element) {
+            element.style.backgroundColor = "";
+        }
+
+
+        function inputFun(element){
+           var x =  element.value;
+           document.getElementById("test").innerHTML = x ;
+         }
+
+        function changefun(element){
+           var x =  element.value;
+           document.getElementById("test").innerHTML = x ;
+         }
+
+        function submitFun(element){
+           alert("you submitted the form");
+         }
+
+
+
+    </script>
+</body>
+
+</html>
