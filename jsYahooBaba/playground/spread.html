@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator</title>
+</head>
+<body>
+    <script>
+
+// function sum(name, ...args){  // Rest Operator 
+//     document.write(`Hellow ${name} : `);
+//     let  sum = 0;
+//     for(let i in args){
+//         sum += args[i];
+//     }
+//     document.write(sum); 
+// }
+// var  arr = [10,20,30];
+// sum("wasim", ...arr); // Spread Operator 
+
+
+
+
+
+
+// var arr1 = [10,20,30,40];
+
+// var arr2 = arr1; // here is cloning mean copy is at is 
+// var arr2 = [...arr1]; // use sprad operator 
+// arr1.push(50);
+// console.log(arr1);
+// console.log(arr2);
+
+
+
+
+
+const arr1 = [10,20,30,40];
+const arr2 = [50,60,70,80];
+// const arr3 = [...arr1,...arr2]  // concat using spread operator 
+// const arr3 = arr1.concat(arr2);
+const arr3 = [5,...arr1,...arr2,100]; // concat using spread operator 
+console.log(arr3);
+
+
+// we can also marge object using spread operator and also use for array see upper example 
+    </script>
+</body>
+</html>

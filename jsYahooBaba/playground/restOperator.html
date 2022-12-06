@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+// // Rest Operator 
+
+// function sum(name,cousre, ...args) {   // (... dots is Rest Operator )
+//     document.write(`Hello  ${name} of ${cousre} :  `)
+//     let sum = 0;
+//     for(let i in args){
+//         sum += args[i];
+//     }
+//     document.write(sum + "<br>");
+// }
+
+// sum("wasim", "BSSE",20,30,40,10); 
+// sum("zeeshan","BSIT",20,30,40);
+
+
+
+
+
+
+
+
+function multiple(name, ...args){
+    let mul = 1;
+    for(let i in args){
+        mul *= args[i];
+    }
+    document.write(mul);
+    
+
+}
+// multiple("khan"5,5,5); // error is here use Rest Operator here 
+multiple("khan",5,5,5);
+
+
+
+
+    </script>
+</body>
+</html>
