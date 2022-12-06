@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array destructuring </title>
+</head>
+<body>
+    <script>
+      
+      
+//     // const user = ["wasim Haider", 21 , "hangu"];
+//     // const user = [, , "hangu"]; // it will show undefined name and age 
+//     const user = ["wasim Haider", 21 , "hangu" , ["Male",25000]]; // nested array 
+
+// // destructuring the array 
+// let [name , age = 18 , city ,[gender,salaray] ] = user; // here 18 is default value 
+
+// document.write(name + "<br>"); 
+// document.write(age + "<br>");
+// document.write(city + "<br>");
+// document.write(gender + "<br>");
+// document.write(salaray + "<br>");
+
+
+
+
+
+
+
+
+
+
+   
+//  const user = ["wasim Haider", 21 , "kahi", "hangu"]; 
+
+// // destructuring the array 
+// let [name,...args] = user;  // here is used rest operator 
+
+// document.write(name + "<br>"); 
+// document.write(args + "<br>");
+
+
+
+  
+
+// array destructuring using function 
+
+function user (){
+return ["wasim Haider", 35 , "kahi"]
+}
+let [name, age , village ] = user();
+console.log(village);
+// function calling 
+user();
+
+
+
+
+</script>
+ 
+
+</body>
+</html>
