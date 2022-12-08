@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+
+        // const prom = (complete) => {
+
+
+        //     return new Promise((res, rej) => {
+        //         console.log("loading data ! please wait ");
+        //         setTimeout(() => {
+        //             if (complete) {
+        //                 res("i am successful ");
+        //             }
+        //             else {
+        //                 rej("i am failed");
+        //             }
+        //         }, 2000)
+
+        //     })
+        // }
+
+
+        // const onFullFilled = (result) => {
+        //     console.log(result);
+
+        // }
+
+        // const onRejection = (error) => {
+        //     console.log(error);
+
+        // }
+
+        // prom(true).then(onFullFilled).catch(onFullFilled);
+
+
+
+
+
+
+        // // we can write also like that just call method is different here 
+
+
+        // const prom = (num1 , num2) => {
+        //     return new Promise((res, rej) => {
+        //         console.log("loading data ! please wait ");
+        //         var ress = num1 * num2;
+        //         // var ress = num1 / num2;
+        //         setTimeout(() => {
+        //             if (ress) {
+        //                 res(`your result is ${ress}` );
+        //             }
+        //             else {
+        //                 rej("Failed to calculate ");
+        //             }
+        //         }, 2000)
+
+        //     })
+        // }
+
+
+
+        // prom(5,0).then((result) => { // ress will be failed to calculate bcz 5 cannot divided by 0
+        //     console.log(result);
+        // }).catch((error) => {
+        //     console.log(error);
+        // });
+
+
+
+        // // prom(5,5).then((result) => {
+        // //     console.log(result);
+        // // }).catch((error) => {
+        // //     console.log(error);
+        // // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // promise . all 
+
+        const p1 = new Promise( (res , rej) => {
+            setTimeout(() =>{
+                 console.log("first");
+                res(10);
+            }, 1 * 1000)
+
+        })
+
+        const p2 = new Promise  ( (res , rej) => {
+            setTimeout(() =>{
+                 console.log("second");
+                res(20);
+            }, 2 * 1000)
+        
+        })
+
+        const p3 = new Promise((res , rej) => {
+            setTimeout(() =>{
+                 console.log("Third");
+                rej(30); // here promise is rejected 
+                // res(30);
+            }, 3 * 1000)
+
+        })
+
+
+        Promise.all([p1,p2,p3]).then((result) => {
+            var sum = 0;
+            for(let i in result){
+
+                sum += result[i];
+            }
+            console.log(` Numbers  ${result} ` )
+            console.log(` The sum of numbers is   ${sum} ` )
+        }).catch((error) => {
+            console.log(` Error : ${error} `)
+        })
+
+
+    </script>
+</body>
+
+</html>
