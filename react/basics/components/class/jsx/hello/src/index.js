@@ -1,15 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './Home';
+// import Home from './Home';
+import Cards from './components/Cards';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
-    <Home />
-    <Home />
+    <Cards
+    image="https://randomuser.me/portraits/men/3.jpg"
+    name="wasim"
+    jonined=" jonined in 2002"
+    desc=" this is ther description of this tag "
+    friends="4"
+    />
+
+    <Cards
+    image="https://randomuser.me/portraits/women/25.jpg"
+    name="saddaf"
+    jonined=" jonined in 2012"
+    desc=" this is ther description of this tag "
+    friends="10"
+    />
   </React.StrictMode>
 );
 
