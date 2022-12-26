@@ -17,6 +17,8 @@ HTML 5
     - SVG
     - iframe
     - Audio/Video
+
+------------------------------------------------------------------------------------
 CSS 3
 - CSS 3
     - CSS Selectors (id, class, tag, universal, attribute, pseudo-class, pseudo-element)
@@ -40,6 +42,7 @@ CSS 3
     - CSS Media Queries
     - CSS Pseudo Classes
     - CSS Box Model
+    ----------------------------------------------------------------------------------
 Bootstrap 5
 - Bootstrap 
     - Containers
@@ -334,5 +337,341 @@ Bootstrap 5
     - Popups
     - Tooltips
     - Toasts
+
     - *** Project with all this **
 
+------------------------------------------------------------------------------------------
+
+Javascript
+- Basics
+    - Variables
+        - var, let, const
+    - Popups
+        - alert, confirm, prompt
+    - Data Types
+        - String
+        - Number
+        - Boolean
+        - Array
+        - Object
+        - Function
+    - Conditions
+        - if
+        - else
+        - else if
+        - switch
+        - Ternary Operators
+    - Loops
+        - for
+        - while
+        - do while
+        - for in (Iterate over an object with keys) 
+        - for of (Iterate over Arrays, Strings, Maps, NodeLists etc.)
+    - Functions
+        - with arguments
+        - without arguments
+        - return
+        - default parameters
+        - rest parameters
+        - arrow functions
+        - function binding (will be discussed in React event handling)
+- Data Serialization
+        - JSON
+            - Parse
+            - Stringify
+        - CSV
+            - CSV is a delimited text file
+            - Is common in data science, data scrapping, and data mining 
+            - MySQL and MongoDB can be populated with CSV data
+            - It is excellent for non-complex data
+        - XML
+            - XML is a markup language
+            - It was industry standard
+            - It is not so common now (2022)
+        - YAML
+            - YAML is a human readable data format
+            - It is used in configuration files
+            - It is used in data science and data mining
+            - It is becoming common
+- Strings
+        - Concatenation
+        - Escape Characters
+        - Template Literals
+        - String Methods
+            - concat
+            - indexOf
+            - lastIndexOf
+            - replace
+            - slice
+            - split
+            - substring
+            - toLowerCase
+            - toUpperCase
+            - trim
+            - trimLeft
+            - trimRight
+            - valueOf
+            - Regular Expressions
+                - example
+                    /[A-Z]+/g
+                pattern
+                    - Basics
+                        - / hello\?\*\\/ escape special characters with backslashes
+                        - () group with parentheses
+                        - \ match the preceding character literally
+                        - / match the preceding character as a regular expression
+                        - | logical OR
+
+                    - Character Classes
+                        - \w word \d digit \s whitespace (tabs, line breaks)
+                        - \W NOT word \D NOT digit \S NOT whitespace
+                        - \t tabs, \n line breaks
+                    - Brackets
+                        - [xyz] match any x, y, z
+                        - [J-Z] match any capital letters between J & Z.
+                        - [^xyz] NOT x, y, z
+                    - Quantification
+                        - bob|alice match bob or alice
+                        - z? match zero or one of the preceding characters
+                        - z* match zero or more of the preceding characters
+                        - z+ match one or more of the preceding characters
+                        - z{n} match exactly n of the preceding characters
+                        - z{n,} match n or more of the preceding characters
+                        - z{n,m} match at least n and at most m of the preceding characters
+                    - Anchors
+                        - ^ match the beginning of the string
+                        - $ match the end of the string
+                        - \b word boundries
+                        - \B NOT word boundries
+                - Modifiers
+                    - i (case insensitive)
+                    - g (global)
+                    - m (multiline)              
+                - exec
+                - test
+                - match
+                - search
+                    str.search(/test/i,text)
+                - replace
+                - Playground
+                    - https://regexr.com/
+                    - examples
+                        - https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285
+- Rest vs Spread
+        - function test(firstName, lastName, ...otherInfo)
+        - const test = ["test", ...more, "test"];
+        - const name = "Mansoor";
+            console.log([...myName]); will yield ["M", "a", "n", "s", "o", "o", "r"]
+        - console.log(add(...numbers));
+        - const myNames = ["Test1", "Test2"];
+        - const test = { ...myNames, runs: "test" };
+        - const myName = { firstName: "mansoor", lastName: "nasir" };
+        - const bio = { ...myName, website: "mansoornasir.com" };
+- Number Methods
+        - toExponential
+        - toFixed
+        - toPrecision
+        - toString
+- Date Methods
+        - getDate
+        - getDay
+        - getFullYear
+        - getHours
+        - getMilliseconds
+        - getMinutes
+        - getMonth
+        - getSeconds
+        - getTime
+        - toDateString
+        - toJSON
+        - toLocaleDateString
+        - toLocaleString
+        - toLocaleTimeString
+        - toTimeString
+        - toUTCString
+- Math Methods
+        - abs
+        - ceil
+        - floor
+        - max
+        - min
+        - pow
+        - random
+        - round
+        - sqrt
+        - trunc
+- Array Methods
+        - length*
+        - forEach
+        - map
+        - filter
+        - reduce
+        - find
+        - findIndex
+        - some
+        - every
+        - sort
+        - reverse
+        - join
+        - slice
+        - push
+            The push() adds elements to the end of an array and returns the new length of the array.
+        - concat
+           The concat() method is used to merge arrays. Concat does not change the existing arrays, but instead returns a new array.
+        - pop
+        - indexOf
+        - lastIndexOf
+        - fill
+        - Destructuring
+    - Sets
+        - A JavaScript Set is a collection of unique values.
+        - A Set is iterable, meaning that it can be looped over with a for..of loop or Array.from().
+            const letters = new Set(["a","b","c"]);
+            letters.forEach (function(value) {
+                text += value;
+            })
+- Classes and Objects
+        - Objects
+            - Private/Public Methods
+            - Private/Public Properties
+            - Destructoring
+            - Keys
+        - Constructor
+        - this Keyword
+        - Inheritance
+        - Getters and Setters
+        - Static Methods/Variables
+        - Prototypes**
+        - Built-in Classes
+            - Array
+            - Date
+            - Error
+            - Function
+            - Map
+            - Math
+            - Object
+            - RegExp
+            - Set
+            - String
+            - JSON
+            - Promise
+- Modules
+        - Line Export
+        - Named Export
+        - Default Export
+        - Import/Require
+DOM
+    - Document Methods
+        - getElementById
+        - getElementsByClassName
+        - getElementsByTagName
+        - querySelector
+        - querySelectorAll
+        - (There are several more, but we will not cover them here)    
+    - CSS
+        - https://www.w3schools.com/jsref/dom_obj_style.asp
+    - Events
+        - https://www.w3schools.com/jsref/dom_obj_event.asp
+AJAX
+        - Understanding Request/Response Sequence
+        - XMLHttpRequest
+        - Response Status Codes/Text
+        - Response Headers
+        - Response Body
+Async Javascript
+        - Callback (Hell)
+        - Promise
+        - Async/Await
+API
+        - Fetch
+            let response = await fetch(url);
+        - Storage
+            - Local Storage
+                - localStorage.setItem
+                - localStorage.getItem
+                - localStorage.removeItem
+                - localStorage.clear
+        - Geo Location
+            - navigator.geolocation.getCurrentPosition
+        - History
+            - history.back();
+            - history.go(-2);
+            - history.forward()
+        - Drag/Drop (Will not be discussed)
+        - Forms (Will not be discussed)
+        - Web Worker (Will not be discussed)
+        - Canvas/Plotly/Chart.js/Google Chart/D3.js (Will not be discussed)
+Sample Apps
+        - Sample Apps
+            - Weather Apps with Real Weather API
+            - News App with Real API
+            - Quiz App with Real API
+NodeJS
+- NodeJS
+    - NPM vs Yarn
+        - local
+        - global
+    - node_modules (git ignore)
+    - command line args
+    - common libraries/packages
+        - core
+            - fs
+            - path
+            - util
+            - os
+            - url
+        - Important libraries for everyone
+            - UUID
+            - Nodemon / Pm2 / Forever
+            - chalk
+            - JSHint
+            - Joi/Hapi
+            - mongoose
+            - Lodash
+            - FakerJS
+            - validator
+            - MomentJS (depricated)
+            - Axios
+            - eslint
+            - prettier
+            - Dotenv
+        - Important libraries for Frontend
+            - React <-- Will be disussed in this course.
+            - Vue
+            - Angular
+            - MeteorJS
+            - EmberJS
+            - PolymerJS
+        - Important libraries for Backend
+            - Express
+                - GET, POST, PUT/PATCH, DELETE
+                - Body Parser
+                - Cors
+                - Multer
+                - Pug
+                - EJS
+            - jsonwebtoken
+            - bcrypt
+            - Nodemailer
+            - NestJS
+            - Database
+                - Mongoose
+                - MySQL
+            - Socket.io (chat apps, may not be discussed)
+            - GraphQL (alternate to express based RESTful APIs)
+            - Testing
+                - Jest
+                - Cypress
+                - NightwatchJS
+                - Mocha
+                - Chai
+                - Puppeteer
+                - TestCafe
+            - Scrapping
+                - Cheerio
+                - Puppeteer
+            - Webpack
+            - Babel
+
+            - even more...
+                https://kinsta.com/blog/javascript-libraries/
