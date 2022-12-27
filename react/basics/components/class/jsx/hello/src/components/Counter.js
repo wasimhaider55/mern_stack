@@ -4,20 +4,34 @@ export default class Counter extends Component{
     constructor(){
         super();
         this.state = {
-            count : 100 
+            num : 0 
         }
     }
     render(){
-       const  handleClick = () => {
+       const  plus = () => {
         this.setState ({
-            count : 200 
+            num : this.state.num+1
+        })
+
+        }
+       const  minus = () => {
+        this.setState ({
+            num : this.state.num-1
+        })
+
+        }
+       const reset = () => {
+        this.setState ({
+            num : 0
         })
 
         }
         return (
             <div>
-                <h1>{this.state.count}</h1>
-            <button onClick={handleClick}>click</button>
+                <h1>{this.state.num}</h1>
+            <button onClick={plus}>pulus</button>
+            <button onClick={minus}>minus</button>
+            <button onClick={reset}>reset</button>
             </div>
         )
     }

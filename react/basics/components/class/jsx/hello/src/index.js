@@ -4,13 +4,16 @@ import './index.css';
 // import Home from './Home';
 // import Cards from './components/Cards';
 // import App from './components/App';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
+// import HideShow from './components/HideShow';
+// import NoArrow from './components/NoArrow';
+import List from "./components/List";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Counter/>
+    <List/>
 
 
 
@@ -21,8 +24,13 @@ root.render(
 
 
 
+    {/* <NoArrow/> */}
 
-    {/* <App/> */}
+  
+    {/* <HideShow /> */}
+
+    {/* <Counter/> */}
+     {/* <App/> */}
     {/* <Cards
     image="https://randomuser.me/portraits/men/3.jpg"
     name="wasim"
