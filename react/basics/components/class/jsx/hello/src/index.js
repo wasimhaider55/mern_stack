@@ -7,22 +7,21 @@ import './index.css';
 // import Counter from './components/Counter';
 // import HideShow from './components/HideShow';
 // import NoArrow from './components/NoArrow';
-import List from "./components/List";
+// import List from "./components/List";
+// import Life from './components/Life';
+// import Event from './components/Event';
+import Forms from './components/Forms';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <List/>
+    <Forms />
 
+    {/* <Event /> */}
+    {/* <Life/> */}
 
-
-
-
-
-
-
-
+    {/* <List/> */}
 
     {/* <NoArrow/> */}
 
