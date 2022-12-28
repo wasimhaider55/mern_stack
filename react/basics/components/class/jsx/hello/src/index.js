@@ -10,13 +10,15 @@ import './index.css';
 // import List from "./components/List";
 // import Life from './components/Life';
 // import Event from './components/Event';
-import Forms from './components/Forms';
+// import Forms from './components/Forms';
+import Todo from './components/Todo';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Forms />
+    <Todo />
+    {/* <Forms /> */}
 
     {/* <Event /> */}
     {/* <Life/> */}
