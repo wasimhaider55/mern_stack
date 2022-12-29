@@ -12,8 +12,9 @@ import './index.css';
 // import Event from './components/Event';
 // import Forms from './components/Forms';
 // import Todo from './components/Todo';
-import App from './components/Todo/App';
+// import App from './components/Todo/App';
 // import Appp from './components/individualClass/Appp';
+import App from './fcomponents/App';
 
 
 import reportWebVitals from './reportWebVitals';
