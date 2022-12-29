@@ -11,13 +11,21 @@ import './index.css';
 // import Life from './components/Life';
 // import Event from './components/Event';
 // import Forms from './components/Forms';
-import Todo from './components/Todo';
+// import Todo from './components/Todo';
+import App from './components/Todo/App';
+// import Appp from './components/individualClass/Appp';
+
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Todo />
+    {/* <Appp /> */}
+
+    <App />
+
+    {/* <Todo /> */}
     {/* <Forms /> */}
 
     {/* <Event /> */}
@@ -27,11 +35,11 @@ root.render(
 
     {/* <NoArrow/> */}
 
-  
+
     {/* <HideShow /> */}
 
     {/* <Counter/> */}
-     {/* <App/> */}
+    {/* <App/> */}
     {/* <Cards
     image="https://randomuser.me/portraits/men/3.jpg"
     name="wasim"
