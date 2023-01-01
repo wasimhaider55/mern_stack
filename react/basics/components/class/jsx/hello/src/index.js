@@ -14,7 +14,10 @@ import './index.css';
 // import Todo from './components/Todo';
 // import App from './components/Todo/App';
 // import Appp from './components/individualClass/Appp';
-import App from './fcomponents/App';
+// import App from './fcomponents/App';
+import App from './routes/App'
+// import Login from './form/Login';
+// import FormikLogin from './form/FormikLogin';
 
 
 import reportWebVitals from './reportWebVitals';
@@ -22,6 +25,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+    {/* <FormikLogin /> */}
+    {/* <Login /> */}
+
+
     {/* <Appp /> */}
 
     <App />
