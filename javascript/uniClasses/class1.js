@@ -415,13 +415,65 @@ const products = [
 // console.log(desc);
 
 
-// 2. List top 5 products with highest rating.
 
 
- products.filter(({rating}) => rating.rate)
-        // .sort((a,b) => {
-        //     return a.rating.rate + b.rating.rate
-        //  })
 
-console.log(res);
+
+
+
+
+
+//************* Questions  *************// 
+// // 1. List all the products with above average price.
+// const {price} = products;
+// const sum = products.reduce((p,c) =>{
+//  return p + c.price
+// },0)
+// console.log(sum);
+// const aveprice = sum/products.length ;
+// console.log(aveprice);
+// const aboveAveragePrice = products.filter((n) => n.price > aveprice)
+// console.log(aboveAveragePrice);
+
+
+
+
+
+// // 2. List top 5 products with highest rating.
+// const sortproduct =  products.sort((a,b) =>{
+//     return   b.rating.rate  - a.rating.rate
+// })
+// for(let i =0; i<=5;i++){
+//     console.log(sortproduct[i]);
+// }
+
+
+
+// // (3) List all distinc categories
+// const {category} =products;
+// const cat = products.map((n) => n.category);
+// console.log(cat);
+// const disCatag = new Set(category);
+// console.log(disCatag);
+
+
+// // 4. Print average price and rating of the products
+// const {price,rating} = products;
+// const sum = products.reduce((p,c) => p + c.price , 0);
+// console.log(sum);
+// const aveprice = sum/products.length;
+// console.log(aveprice);
+// const ratee = products.map((n) => n.rating.rate);
+// console.log(ratee);
+
+
+
+
+// // 5. List top 5 products with highest rating and lowest price.
+// let highestrate = [];
+//  highestrate =  products.sort((a,b) =>   b.rating.rate - a.rating.rate);
+// const lowestprice = highestrate.sort((p,c) => p.price - c.price);
+// for(let i = 0; i<5; i++){
+//     console.log(lowestprice[i]);
+// }
 
