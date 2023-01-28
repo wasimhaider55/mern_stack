@@ -450,9 +450,13 @@ const products = [
 
 
 // // (3) List all distinc categories
-// const {category} =products;
-// const cat = products.map((n) => n.category);
-// console.log(cat);
+// const {category} = products;
+// const cat = products.map((n) => {
+//     return  n.category 
+// } );
+// // console.log(cat);
+// const disCatag = new Set(cat);
+// console.log(disCatag);
 
 
 // // 4. Print average price and rating of the products
