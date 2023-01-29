@@ -606,8 +606,11 @@ const products = {
 //         return console.log(` ${title} ,  ${id} , ${price} ,  ${images.map((m) =>m)}  `);
 //     });
 
-    
-//  // // // part 5 : all products with no thumbial and more than three images avaible
-//  const specificProduct = products.products.filter((n) => {
-//     return  n.thumbnail.length === 0 && n.images.length > 3}) ;
-//  console.log(specificProduct);
+
+//  // // // part 5 : all products with no thumbnial and more than three images avaible
+const [thumbnail, images] = products.products;
+const specificProduct = products.products.filter(({ thumbnail, images }) => {
+    return thumbnail.length === 0 && images.length > 3
+});
+console.log(specificProduct);
+ // it will return empty array because there is no  product without no thumbnail and more than 3 images
