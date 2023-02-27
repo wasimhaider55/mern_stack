@@ -1,11 +1,14 @@
 const profileRoutes = require("express").Router();
 
-profileRoutes.get("/profile",(req,res) => {
+profileRoutes.get("/", (req, res) => {
+    res.send({
+        message: "we are at profile page"
+    })
 
 })
 
-profileRoutes.post("/profile",(req,res) => {
+profileRoutes.post("/profile", (req, res) => {
 
 })
 
-module.exports = profileRoutes
+module.exports = profileRoutes;

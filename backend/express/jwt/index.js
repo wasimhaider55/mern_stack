@@ -1,20 +1,24 @@
 const express = require("express");
-require("dotenv/config");
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const helmet = require("helmet");
+const morgan = require("morgan");
+mongoose.set('strictQuery', false);
 const userRoutes = require("./routes/user");
-
-
-const PORT = process.env.PORT || 3001
-
 const app = express();
 
-mongoose.connect(`mongodb + srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.fpw1dse.mongodb.net/?retryWrites=true&w=majority`,
-    () => console.log("Connected with DB"));
-app.use((express.json()));
 
-app.use("/api/user/", userRoutes)
+dotenv.config();
+mongoose.connect(process.env.MONGO_URL,
+    (err) => {
+        if (err) console.log(err)
+        else console.log("connected to mongoDB");
+    });
 
-app.listen(PORT, () => {
-    console.log(`Api server is running on  ${PORT}`);
+
+// middleware
+app.use("/api/user", userRoutes);
+
+app.listen(3001, () => {
+    console.log("backend server is running");
 })
-
