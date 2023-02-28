@@ -17,6 +17,7 @@ mongoose.connect(process.env.MONGO_URL,
 
 
 // middleware
+app.use(express.json());
 app.use("/api/user", userRoutes);
 
 app.listen(3001, () => {
