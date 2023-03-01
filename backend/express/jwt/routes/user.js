@@ -2,11 +2,16 @@ const router = require("express").Router();
 const { regValidation, loginValidation } = require("./validation");
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const veriftyToken = require("./verifyToken");
+const verifyToken = require("./verifyToken");
 
 
-router.get("/register", (req, res) => {
-    
+router.get("/register", verifyToken , (req, res) => {
+    res.send("we are at register router, method GET")
+
 })
+
 // REGISTERATION
 router.post("/register", async (req, res) => {
     const { name, email, password, address, } = req.body;
@@ -15,15 +20,15 @@ router.post("/register", async (req, res) => {
     if (error) return res.send(error.details[0].message); // Gaurd clause
 
     const salt = await bcrypt.genSalt(10);
-    const hash = await bcrypt.hash(password,salt);
-    
-    const existUser =  await User.findOne({email : email});
-    if (existUser) return  res.status(400).send("Email is already registered!!!");
+    const hash = await bcrypt.hash(password, salt);
+
+    const existUser = await User.findOne({ email: email });
+    if (existUser) return res.status(400).send("Email is already registered!!!");
 
     const user = new User({
         name,
         email,
-        password : hash,
+        password: hash,
         address
     })
     try {
@@ -47,8 +52,23 @@ router.delete("/register", (req, res) => {
 // LOGIN
 router.get("/login", (req, res) => {
 
-})
-router.post("/login", (req, res) => {
+});
+
+
+router.post("/login", async (req, res) => {
+    const { email, password } = req.body;
+    const user = await User.findOne({ email, email });
+    if (!user) return res.status(400).send("Email not found!!");
+
+    const compare = await bcrypt.compare(password, user.password);
+    if (!compare) return res.status(400).send("Password is incorrect!!")
+
+
+    const token = jwt.sign({email: user.email}, process.env.TOKEN_SECRET);
+    res.header("auth-token" , token).send(token);
+    
+    // res.send("logged in  successfully!");
+
 
 })
 router.patch("/login", (req, res) => {
