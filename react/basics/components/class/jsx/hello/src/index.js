@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import Home from './Home';
-// import Cards from './components/Cards';
+import Cards from './components/Cards';
 // import App from './components/App';
 // import Counter from './components/Counter';
 // import HideShow from './components/HideShow';
@@ -15,12 +15,10 @@ import './index.css';
 // import App from './components/Todo/App';
 // import Appp from './components/individualClass/Appp';
 // import App from './fcomponents/App';
-import App from './routes/App'
+// import App from './routes/App'
 // import Login from './form/Login';
 // import FormikLogin from './form/FormikLogin';
 
-
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,7 +30,7 @@ root.render(
 
     {/* <Appp /> */}
 
-    <App />
+    {/* <App /> */}
 
     {/* <Todo /> */}
     {/* <Forms /> */}
@@ -49,13 +47,14 @@ root.render(
 
     {/* <Counter/> */}
     {/* <App/> */}
-    {/* <Cards
-    image="https://randomuser.me/portraits/men/3.jpg"
-    name="wasim"
-    jonined=" jonined in 2002"
-    desc=" this is ther description of this tag "
-    friends="4"
-    /> */}
+
+    <Cards
+      image="https://randomuser.me/portraits/men/3.jpg"
+      name="wasim haider"
+      jonined=" jonined in 2002"
+      desc=" this is ther description of this tag "
+      friends="4"
+    />
 
     {/* <Cards
     image="https://randomuser.me/portraits/women/25.jpg"
@@ -67,7 +66,3 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
