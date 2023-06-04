@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import Home from './Home';
-import Cards from './components/Cards';
+// import Cards from './components/Cards';
 // import App from './components/App';
 // import Counter from './components/Counter';
 // import HideShow from './components/HideShow';
 // import NoArrow from './components/NoArrow';
-// import List from "./components/List";
+import List from "./components/List";
 // import Life from './components/Life';
 // import Event from './components/Event';
 // import Forms from './components/Forms';
@@ -38,7 +38,7 @@ root.render(
     {/* <Event /> */}
     {/* <Life/> */}
 
-    {/* <List/> */}
+    <List/>
 
     {/* <NoArrow/> */}
 
@@ -48,13 +48,13 @@ root.render(
     {/* <Counter/> */}
     {/* <App/> */}
 
-    <Cards
+    {/* <Cards
       image="https://randomuser.me/portraits/men/3.jpg"
       name="wasim haider"
       jonined=" jonined in 2002"
       desc=" this is ther description of this tag "
       friends="4"
-    />
+    /> */}
 
     {/* <Cards
     image="https://randomuser.me/portraits/women/25.jpg"
